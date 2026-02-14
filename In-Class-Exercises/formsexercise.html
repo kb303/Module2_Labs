@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./formsexercise.css" />
+  </head>
+  <body>
+    <form onsubmit="functionSubmit(event)">
+      <div>
+        <label> firstName: </label>
+        <input name="firstName" id="firstName" />
+      </div>
+      <div>
+        <label> lastName: </label>
+        <input name="lastName" id="lastName" />
+      </div>
+      <div>
+        <input type="submit" />
+      </div>
+    </form>
+
+    <div>My name is <span id="name"></span></div>
+  </body>
+  <script>
+    function functionSubmit(event) {
+      event.preventDefault();
+      const form = event.target;
+      let firstName = form.firstName.value;
+      //let firstName = document.getElementById("firstName").value;
+      const lastName = form.lastName.value;
+      //let lastName = document.getElementById("lastName").value;
+      document.getElementById("name").innerHTML = firstName + " " + lastName;
+    }
+  </script>
+</html>
