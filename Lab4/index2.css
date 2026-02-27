@@ -1,0 +1,36 @@
+#whole-page {
+  display: flex;
+  flex-direction: row;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#main-content {
+  background-color: #fdfbd4;
+  opacity: 0.9;
+}
+
+#contact-sidebar {
+  background-color: #bdb96a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 25%;
+  padding: 40px;
+}
+
+.page-section {
+  padding: 20px;
+  border-bottom: black solid 1px;
+}
+
+.page-section h1 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.id-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
